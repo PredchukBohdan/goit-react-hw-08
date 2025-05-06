@@ -1,0 +1,17 @@
+.contactsList {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.error {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #f10000;
+}
+@media (min-width: 768px) {
+  .error {
+    font-size: 20px;
+  }
+}

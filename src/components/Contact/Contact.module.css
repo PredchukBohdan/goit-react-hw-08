@@ -1,0 +1,74 @@
+.item {
+  flex-basis: 100%;
+  padding: 15px;
+  background-color: var(--light);
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.itemName {
+  margin-bottom: 5px;
+}
+.itemName,
+.itemPhone {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 5px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+}
+.itemDelete {
+  padding: 8px 12px;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid var(--button);
+  border-radius: 5px;
+  background-color: var(--button);
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  text-shadow: 1px 1px 5px black;
+  flex-shrink: 0;
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+}
+@media (min-width: 600px) {
+  .item {
+    flex-basis: calc((100% - 15px) / 2);
+  }
+}
+@media (min-width: 950px) {
+  .item {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+@media (min-width: 1200px) {
+  .item {
+    flex-basis: calc((100% - 45px) / 4);
+  }
+}
+@media (min-width: 1440px) {
+  .itemName,
+  .itemPhone {
+    font-size: 20px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .itemDelete {
+    font-size: 20px;
+  }
+}

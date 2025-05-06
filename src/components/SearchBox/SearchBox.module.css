@@ -1,0 +1,30 @@
+.searchBox {
+  width: 100%;
+  max-width: 375px;
+}
+.searchLabel {
+  display: flex;
+  flex-direction: column;
+}
+.searchLabel span {
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.searchInput {
+  padding: 8px 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+@media (min-width: 1440px) {
+  .searchLabel span {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+}
