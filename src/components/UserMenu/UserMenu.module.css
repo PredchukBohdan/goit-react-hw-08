@@ -1,0 +1,46 @@
+.userMenu {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  flex-direction: column;
+}
+.user {
+  text-align: right;
+  color: #fff;
+}
+.logout {
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: #402352;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logout:hover {
+  background-color: #fff;
+  color: #3c038b;
+}
+@media (min-width: 600px) {
+  .userMenu {
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .logout {
+    font-size: 16px;
+  }
+  .user {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .logout {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

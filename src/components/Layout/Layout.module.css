@@ -1,0 +1,14 @@
+.header {
+  background-color: #402352;
+  padding: 20px 0;
+}
+.header a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 25px 0;
+  }
+}

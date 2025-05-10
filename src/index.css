@@ -1,9 +1,9 @@
 :root {
   --background-color: #a7a7f6c2;
   --error: #ff0000;
-  --light: #9797ff;
-  --button: #4d02b9;
-  --button-hover: #9042ff;
+  --light: #a7a7f6;
+  --button: #402352;
+  --button-hover: #fff;
 }
 body {
   font-family: sans-serif;

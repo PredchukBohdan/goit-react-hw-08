@@ -5,7 +5,7 @@ import {
   selectError,
   selectFilteredContacts,
   selectLoading,
-} from "../../redux/contactsSlice";
+} from "../../redux/contacts/selectors";
 import { FadeLoader } from "react-spinners";
 
 const loaderStyles = {

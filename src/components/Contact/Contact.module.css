@@ -2,7 +2,7 @@
   flex-basis: 100%;
   padding: 15px;
   background-color: var(--light);
-  border: 1px solid #000;
+  border: 1px solid #3d099a;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -16,12 +16,12 @@
 .itemPhone {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 15px;
   gap: 5px;
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     flex-shrink: 0;
   }
 }
@@ -30,18 +30,18 @@
   width: fit-content;
   align-self: center;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   border: 1px solid var(--button);
   border-radius: 5px;
   background-color: var(--button);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
-  text-shadow: 1px 1px 5px black;
   flex-shrink: 0;
 
   &:hover {
     background-color: var(--button-hover);
+    color: #3c038b;
   }
 }
 @media (min-width: 600px) {
@@ -52,6 +52,20 @@
 @media (min-width: 950px) {
   .item {
     flex-basis: calc((100% - 30px) / 3);
+  }
+}
+@media (min-width: 1024px) {
+  .itemName,
+  .itemPhone {
+    font-size: 18px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .itemDelete {
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {

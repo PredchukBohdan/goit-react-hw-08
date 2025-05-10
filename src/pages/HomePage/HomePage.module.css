@@ -1,0 +1,22 @@
+.title {
+  text-align: center;
+  margin-top: 50px;
+  color: #402352;
+  font-size: 50px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #8c218b;
+  font-style: italic;
+}
+@media (min-width: 1440px) {
+  .title {
+    font-size: 90px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+}

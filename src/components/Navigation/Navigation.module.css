@@ -1,0 +1,39 @@
+.navigationList {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navigationItem a {
+  position: relative;
+  transition: transform 0.3s ease;
+  display: block;
+}
+.navigationItem a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+.navigationItem a.active::before,
+.navigationItem a:hover::before {
+  transform: scaleX(1);
+}
+@media (min-width: 768px) {
+  .navigationList {
+    gap: 20px;
+  }
+  .navigationItem a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .navigationItem a {
+    font-size: 20px;
+  }
+}

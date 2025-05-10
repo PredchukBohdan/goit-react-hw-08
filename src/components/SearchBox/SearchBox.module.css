@@ -12,14 +12,20 @@
   font-weight: 600;
 }
 .searchInput {
-  padding: 8px 5px;
-  border: 1px solid #000;
-  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #3d099a;
+  border-radius: 8px;
+  font-size: 15px;
   outline: none;
   box-shadow: none;
 
   &:focus {
     outline: none;
+  }
+}
+@media (min-width: 1024px) {
+  .searchInput {
+    font-size: 17px;
   }
 }
 @media (min-width: 1440px) {
